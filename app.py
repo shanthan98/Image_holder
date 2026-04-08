@@ -51,7 +51,18 @@ st.markdown(
 # Back button
 st.markdown("---")
 
-if st.button("⬅ Back to Dashboard"):
-    st.markdown(
-        "[Go back to dashboard](https://app.powerbigov.us/view?r=eyJrIjoiNGU4Y2U4ZTctOTFmNS00NDA5LWI5ODMtZjY4YjY5YWM0ZDNlIiwidCI6IjVjNWUxOWY2LWE2YWItNGI0NS1iMWQwLWJlNDYwOGE5YTY3ZiJ9)"
-    )
+dashboard_url = "https://app.powerbigov.us/view?r=eyJrIjoiNGU4Y2U4ZTctOTFmNS00NDA5LWI5ODMtZjY4YjY5YWM0ZDNlIiwidCI6IjVjNWUxOWY2LWE2YWItNGI0NS1iMWQwLWJlNDYwOGE5YTY3ZiJ9"
+
+st.markdown(f"""
+<a href="{dashboard_url}" target="_self">
+    <button style="
+        padding:10px 20px;
+        border-radius:8px;
+        border:1px solid #ccc;
+        background-color:#f5f5f5;
+        font-size:16px;
+        cursor:pointer;">
+        ⬅ Back to Dashboard
+    </button>
+</a>
+""", unsafe_allow_html=True)
