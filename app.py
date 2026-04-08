@@ -35,7 +35,7 @@ st.markdown('<div class="title">🌐 Español</div>', unsafe_allow_html=True)
 
 st.markdown(
     '<div class="text">'
-    'Spanish version coming soon.<br><br>'
+    'Spanish dashboard coming soon.<br><br>'
     'Versión en español próximamente.<br><br>'
     'We are working to make this dashboard accessible in Spanish.<br>'
     'Estamos trabajando para ofrecer este tablero en español.'
